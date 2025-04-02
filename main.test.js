@@ -31,15 +31,41 @@ const countTrues = function(boolArr){
 
 //  `makeFriendly`
 const makeFriendly = function(paragraph){
-  
+  let result = ""
+  for (let char of paragraph){
+    if (char === "."){
+      result = result + "!"
+    } else{
+      result = result + char
+    }
+  }  
+  return result
 }
-
 // * `cubeAll`
-
-// * `womenOnly`
-
+const cubeAll = function(numbers){
+  const numArr = []
+  for (let num of numbers){
+    const result = num ** 3
+    numArr.push(result)
+  }  
+  return numArr
+}
+// * `womenOnly`{}
+const womenOnly = function(names){
+  let results = []
+  for( let name of names){
+    if(name[name.length - 1] === "F"){
+      results.push(name)
+    }
+  }
+  return results
+}
 // * `integersOnly`
-
+const integersOnly = function(numbers){
+  const result =[]
+  for (const number of numbers){
+  }
+} 
 /*********************************
  * OUR CODE BELOW; DO NOT TOUCH! *
  *********************************/
